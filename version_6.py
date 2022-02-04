@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Feb  1 13:10:28 2022
+Created on Thu Feb  3 09:33:45 2022
 
 @author: VíctorSanzMiguens
 """
@@ -87,6 +87,10 @@ def areacirPidiendo():
 
 
 
+
+suma=lambda x,y: x+y
+divi=lambda x,y: x/y
+
 while True:
         print("""
     -------------------------------------------------------------------------------          
@@ -110,7 +114,10 @@ while True:
         opcion = int(input("Elige una opción: ") )     
 
         if opcion == 1:            
-            sumarPidiendo()
+            print(" ")
+            n1=int(input("Introduce un número: "))    
+            n2=int(input("Introduce un número: "))   
+            print( f"la suma de {n1} + {n2}= ",suma(n1,n2))
             
         elif opcion == 2:        
             restarPidiendo()
@@ -119,7 +126,13 @@ while True:
             multiplicarPidiendo()
             
         elif opcion==4:
-            divPidiendo()
+            print("")
+            n1 = float(input("Introduce tu primer número: ") )
+            n2 = float(input("Introduce tu segundo número: ") )
+            if n2==0:
+                  print("No se puede dividir por cero")
+            else: 
+                print(f"la división entre {n1} y {n2} = ", divi(n1,n2))
             
         elif opcion == 5:
                cociPidiendo()
