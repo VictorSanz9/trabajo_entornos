@@ -96,7 +96,7 @@ while True:
     -------------------------------------------------------------------------------          
         Dime, ¿qué quieres hacer?
         
-        1) Sumar los dos números
+        1) sumatorio de dos números
         2) Restar los dos números
         3) Multiplicar los dos números
         4) Dividir los dos números 
